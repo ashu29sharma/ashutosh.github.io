@@ -32,7 +32,44 @@
     .nav a:hover {
       color: #e67e22;
     }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+      animation: fadeIn 0.4s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
   </style>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const links = document.querySelectorAll('.nav a');
+      const sections = document.querySelectorAll('section');
+
+      function showSection(id) {
+        sections.forEach(sec => {
+          sec.classList.remove('active');
+          if (sec.id === id) sec.classList.add('active');
+        });
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href').substring(1);
+          history.pushState(null, '', '#' + targetId);
+          showSection(targetId);
+        });
+      });
+
+      // Initial section on load
+      const initial = window.location.hash.substring(1) || 'about';
+      showSection(initial);
+    });
+  </script>
 </head>
 <body>
   <header>
