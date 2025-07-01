@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ashutosh Sharma | PhD Scholar</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      z-index: 1000;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 1rem;
+      font-weight: 500;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #2c3e50;
+    }
+    .nav a:hover {
+      color: #e67e22;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,46 +41,58 @@
     <p>Ph.D. Candidate in Biochemistry | IIT Delhi</p>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am <strong>Ashutosh Sharma</strong>, a Ph.D. candidate in <strong>Biochemistry</strong> at <strong>IIT Delhi</strong>, working on the role of <strong>small non-coding RNAs in <em>Mycobacterium tuberculosis</em></strong>, particularly in <strong>antimicrobial resistance</strong> and <strong>stress adaptation</strong>.</p>
-    <p>In addition to my academic work, I am the creator and host of <strong>PhDMonk</strong>, a <a href="https://www.youtube.com/@PhDmonk" target="_blank">YouTube podcast</a> that shares stories and insights from the world of research, highlighting curiosity-driven learning and the pursuit of scientific growth.</p>
-    <p>My research experience spans premier Indian institutes like <strong>IIT Delhi</strong>, <strong>IISER Bhopal</strong>, and <strong>AIIMS</strong>, with core strengths in <strong>RNA biology</strong>, <strong>molecular cloning</strong>, <strong>protein biophysics</strong>, and <strong>structural biology</strong>. I’ve also been involved in mentoring, teaching, and independent research leadership.</p>
-  </section>
+  <main>
+    <nav>
+      <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#outreach">Outreach</a></li>
+        <li><a href="#publications">Contributions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <section id="research">
-    <h2>Research Interests</h2>
-    <ul>
-      <li><strong>sRNA-mediated regulation in <em>M. tuberculosis</em></strong>: Exploring how bacterial sRNAs (e.g., MTS1338) influence gene expression in stress and drug-exposed conditions.</li>
-      <li><strong>Mechanisms of antimicrobial resistance</strong>: Investigating the molecular mechanisms underlying bacterial survival and adaptation under antibiotic pressure.</li>
-      <li><strong>Protein biophysics & structural biology</strong>: Studying the structure and function of proteins using FPLC, CD spectroscopy, DSC, TSA, and other analytical techniques.</li>
-      <li><strong>Synthetic nanobody screening & engineering</strong>: Designing nanobody tools via phage and ribosome display for targeting key biomolecular systems.</li>
-    </ul>
-  </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am <strong>Ashutosh Sharma</strong>, a Ph.D. candidate in <strong>Biochemistry</strong> at <strong>IIT Delhi</strong>, working on the role of <strong>small non-coding RNAs in <em>Mycobacterium tuberculosis</em></strong>, particularly in <strong>antimicrobial resistance</strong> and <strong>stress adaptation</strong>.</p>
+      <p>In addition to my academic work, I am the creator and host of <strong>PhDMonk</strong>, a <a href="https://www.youtube.com/@PhDmonk" target="_blank">YouTube podcast</a> that shares stories and insights from the world of research, highlighting curiosity-driven learning and the pursuit of scientific growth.</p>
+      <p>My research experience spans premier Indian institutes like <strong>IIT Delhi</strong>, <strong>IISER Bhopal</strong>, and <strong>AIIMS</strong>, with core strengths in <strong>RNA biology</strong>, <strong>molecular cloning</strong>, <strong>protein biophysics</strong>, and <strong>structural biology</strong>. I’ve also been involved in mentoring, teaching, and independent research leadership.</p>
+    </section>
 
-  <section id="outreach">
-    <h2>Outreach & Leadership</h2>
-    <p><strong>Creator & Host, <a href="https://www.youtube.com/@PhDmonk" target="_blank">PhDMonk Podcast</a></strong> — A science communication initiative on YouTube focused on the life, lessons, and mindset of researchers.</p>
-  </section>
+    <section id="research">
+      <h2>Research Interests</h2>
+      <ul>
+        <li><strong>sRNA-mediated regulation in <em>M. tuberculosis</em></strong>: Exploring how bacterial sRNAs (e.g., MTS1338) influence gene expression in stress and drug-exposed conditions.</li>
+        <li><strong>Mechanisms of antimicrobial resistance</strong>: Investigating the molecular mechanisms underlying bacterial survival and adaptation under antibiotic pressure.</li>
+        <li><strong>Protein biophysics & structural biology</strong>: Studying the structure and function of proteins using FPLC, CD spectroscopy, DSC, TSA, and other analytical techniques.</li>
+        <li><strong>Synthetic nanobody screening & engineering</strong>: Designing nanobody tools via phage and ribosome display for targeting key biomolecular systems.</li>
+      </ul>
+    </section>
 
-  <section id="publications">
-    <h2>Research Contributions</h2>
-    <ol>
-      <li><strong>PhD Research (2023–Present)</strong> – IIT Delhi: Small RNA regulation in <em>M. tuberculosis</em> under drug and stress; RNA-protein interaction assays and sRNA pathway dissection.</li>
-      <li><strong>Senior Research Fellow, IIT Delhi (2023–2024)</strong>: Focused on RNA-RNA, RNA-protein, and DNA-protein interactions and post-transcriptional regulation.</li>
-      <li><strong>Junior Research Fellow, IISER Bhopal (2019–2022)</strong>: Structural and biophysical work on E3 ligases and ubiquitin; nanobody design and protein characterization.</li>
-      <li><strong>Master’s Thesis, AIIMS New Delhi (2019)</strong>: Cloning, expression, purification, and biophysical characterization of MurD protein from <em>A. baumannii</em>.</li>
-    </ol>
-  </section>
+    <section id="outreach">
+      <h2>Outreach & Leadership</h2>
+      <p><strong>Creator & Host, <a href="https://www.youtube.com/@PhDmonk" target="_blank">PhDMonk Podcast</a></strong> — A science communication initiative on YouTube focused on the life, lessons, and mindset of researchers.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Location:</strong> Delhi, India</p>
-    <p><strong>Email:</strong> <a href="mailto:ashutosh.cuh@gmail.com">ashutosh.cuh@gmail.com</a></p>
-    <p><strong>Phone:</strong> +91‑98735‑05388</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashutosh-sh/" target="_blank">linkedin.com/in/ashutosh-sh</a></p>
-    <p><strong>Podcast:</strong> <a href="https://www.youtube.com/@PhDmonk" target="_blank">PhDMonk (YouTube)</a></p>
-  </section>
+    <section id="publications">
+      <h2>Research Contributions</h2>
+      <ol>
+        <li><strong>PhD Research (2023–Present)</strong> – IIT Delhi: Small RNA regulation in <em>M. tuberculosis</em> under drug and stress; RNA-protein interaction assays and sRNA pathway dissection.</li>
+        <li><strong>Senior Research Fellow, IIT Delhi (2023–2024)</strong>: Focused on RNA-RNA, RNA-protein, and DNA-protein interactions and post-transcriptional regulation.</li>
+        <li><strong>Junior Research Fellow, IISER Bhopal (2019–2022)</strong>: Structural and biophysical work on E3 ligases and ubiquitin; nanobody design and protein characterization.</li>
+        <li><strong>Master’s Thesis, AIIMS New Delhi (2019)</strong>: Cloning, expression, purification, and biophysical characterization of MurD protein from <em>A. baumannii</em>.</li>
+      </ol>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Location:</strong> Delhi, India</p>
+      <p><strong>Email:</strong> <a href="mailto:ashutosh.cuh@gmail.com">ashutosh.cuh@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91‑98735‑05388</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashutosh-sh/" target="_blank">linkedin.com/in/ashutosh-sh</a></p>
+      <p><strong>Podcast:</strong> <a href="https://www.youtube.com/@PhDmonk" target="_blank">PhDMonk (YouTube)</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Ashutosh Sharma</p>
